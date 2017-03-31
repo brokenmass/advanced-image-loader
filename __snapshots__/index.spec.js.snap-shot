@@ -166,7 +166,7 @@ exports['name can be a function 1'] = {
     "width": "original",
     "quality": 95
   },
-  "resourcePath": "/Users/massa/Dev/advanced-image-loader/test/assets/test.png"
+  "resourcePath": "assets/test.png"
 }
 
 exports['name can be a function 2'] = "module.exports = {\n  src: __webpack_public_path__ + \"image\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"image\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"image\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
