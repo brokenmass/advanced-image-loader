@@ -1,0 +1,183 @@
+exports['should used the default configuration 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['width should be configurable using loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-400@95\",\n  width: 400,\n  height: 225,\n  toString: function() {return __webpack_public_path__ + \"test-400@95\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-400@95\",\n      width: 400,\n      height: 225\n    }\n  ]\n}"
+
+exports['width should be configurable using resourceQuery options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-400@95\",\n  width: 400,\n  height: 225,\n  toString: function() {return __webpack_public_path__ + \"test-400@95\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-400@95\",\n      width: 400,\n      height: 225\n    }\n  ]\n}"
+
+exports['width should priotitize resourceQuery over loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-400@95\",\n  width: 400,\n  height: 225,\n  toString: function() {return __webpack_public_path__ + \"test-400@95\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-400@95\",\n      width: 400,\n      height: 225\n    }\n  ]\n}"
+
+exports['width should accept alias value "original" 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['width should not enlarge original image 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['width should be validated ${JSON.stringify(testCase)} 1'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['width should be validated ${JSON.stringify(testCase)} 2'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['width should be validated ${JSON.stringify(testCase)} 3'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['width should be validated ${JSON.stringify(testCase)} 4'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['width should be validated ${JSON.stringify(testCase)} 5'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['width should be validated ${JSON.stringify(testCase)} 6'] = "advanced-image-loader options validation error:\n    - Missing REQUIRED option \"width\""
+
+exports['width should be validated ${JSON.stringify(testCase)} 7'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['width should be validated ${JSON.stringify(testCase)} 8'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['width should be validated ${JSON.stringify(testCase)} 9'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['width should be validated ${JSON.stringify(testCase)} 10'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['width should be validated ${JSON.stringify(testCase)} 11'] = "advanced-image-loader options validation error:\n    - option \"width\" must be a valid width [positive integer or \"original\" string]"
+
+exports['srcset should be configurable using loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  srcset: [__webpack_public_path__ + \"test-400@95\" + \" 400w\", __webpack_public_path__ + \"test-600@95\" + \" 600w\", __webpack_public_path__ + \"test-800@95\" + \" 800w\"].join(', '),\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-400@95\",\n      width: 400,\n      height: 225\n    },\n    {\n      src: __webpack_public_path__ + \"test-600@95\",\n      width: 600,\n      height: 338\n    },\n    {\n      src: __webpack_public_path__ + \"test-800@95\",\n      width: 800,\n      height: 450\n    },\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['srcset should be configurable using resourceQuery options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  srcset: [__webpack_public_path__ + \"test-400@95\" + \" 400w\", __webpack_public_path__ + \"test-600@95\" + \" 600w\", __webpack_public_path__ + \"test-800@95\" + \" 800w\"].join(', '),\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-400@95\",\n      width: 400,\n      height: 225\n    },\n    {\n      src: __webpack_public_path__ + \"test-600@95\",\n      width: 600,\n      height: 338\n    },\n    {\n      src: __webpack_public_path__ + \"test-800@95\",\n      width: 800,\n      height: 450\n    },\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['srcset should priotitize resourceQuery over loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  srcset: [__webpack_public_path__ + \"test-400@95\" + \" 400w\", __webpack_public_path__ + \"test-600@95\" + \" 600w\", __webpack_public_path__ + \"test-800@95\" + \" 800w\"].join(', '),\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-400@95\",\n      width: 400,\n      height: 225\n    },\n    {\n      src: __webpack_public_path__ + \"test-600@95\",\n      width: 600,\n      height: 338\n    },\n    {\n      src: __webpack_public_path__ + \"test-800@95\",\n      width: 800,\n      height: 450\n    },\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['srcset should not cause the same file to be emitted twice 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-400@95\",\n  width: 400,\n  height: 225,\n  toString: function() {return __webpack_public_path__ + \"test-400@95\";},\n  srcset: [__webpack_public_path__ + \"test-400@95\" + \" 400w\", __webpack_public_path__ + \"test-600@95\" + \" 600w\", __webpack_public_path__ + \"test-800@95\" + \" 800w\"].join(', '),\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-400@95\",\n      width: 400,\n      height: 225\n    },\n    {\n      src: __webpack_public_path__ + \"test-600@95\",\n      width: 600,\n      height: 338\n    },\n    {\n      src: __webpack_public_path__ + \"test-800@95\",\n      width: 800,\n      height: 450\n    }\n  ]\n}"
+
+exports['srcset values bigger that the image width should be ignored 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  srcset: [__webpack_public_path__ + \"test-800@95\" + \" 800w\", __webpack_public_path__ + \"test-1600@95\" + \" 1600w\"].join(', '),\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-800@95\",\n      width: 800,\n      height: 450\n    },\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['srcset should accept alias value "original" 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  srcset: [__webpack_public_path__ + \"test-200@95\" + \" 200w\", __webpack_public_path__ + \"test-1600@95\" + \" 1600w\"].join(', '),\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-200@95\",\n      width: 200,\n      height: 113\n    },\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 1'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 2'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 3'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 4'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 5'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 6'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 7'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 8'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 9'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 10'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 11'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['srcset should be validated ${JSON.stringify(testCase)} 12'] = "advanced-image-loader options validation error:\n    - option \"srcset\" must be an array of valid widths [positive integer or \"original\" string]"
+
+exports['placeholder should be configurable using loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  placeholder: {\n    src: \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAAACXBIWXMAAAsSAAALEgHS3X78AAAAh0lEQVRIie3SMQpDIRBF0euoA4L7X5W70WJANClCQlKa/GDjK0fxHRhDKeXGxsjO8gM4gAMACCuXW2uEEJhz4r3HzFDV17mI4Jz7mF0KAKi1AuCcY4yBqmJmmBnee1T1f4CcMzlnAOaciDw2mFICoPdOjHHlye//wLP8PavlPwGuygEcwHbAHUfTHurTFT+dAAAAAElFTkSuQmCC\",\n    width: 32,\n    height: 18\n  },\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['placeholder should be configurable using resourceQuery options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  placeholder: {\n    src: \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAAACXBIWXMAAAsSAAALEgHS3X78AAAAh0lEQVRIie3SMQpDIRBF0euoA4L7X5W70WJANClCQlKa/GDjK0fxHRhDKeXGxsjO8gM4gAMACCuXW2uEEJhz4r3HzFDV17mI4Jz7mF0KAKi1AuCcY4yBqmJmmBnee1T1f4CcMzlnAOaciDw2mFICoPdOjHHlye//wLP8PavlPwGuygEcwHbAHUfTHurTFT+dAAAAAElFTkSuQmCC\",\n    width: 32,\n    height: 18\n  },\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['placeholder should priotitize resourceQuery over loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  placeholder: {\n    src: \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAAACXBIWXMAAAsSAAALEgHS3X78AAAAh0lEQVRIie3SMQpDIRBF0euoA4L7X5W70WJANClCQlKa/GDjK0fxHRhDKeXGxsjO8gM4gAMACCuXW2uEEJhz4r3HzFDV17mI4Jz7mF0KAKi1AuCcY4yBqmJmmBnee1T1f4CcMzlnAOaciDw2mFICoPdOjHHlye//wLP8PavlPwGuygEcwHbAHUfTHurTFT+dAAAAAElFTkSuQmCC\",\n    width: 32,\n    height: 18\n  },\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 1'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 2'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 3'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 4'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 5'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 6'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 7'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 8'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 9'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['placeholder should be validated ${JSON.stringify(testCase)} 10'] = "advanced-image-loader options validation error:\n    - option \"placeholder\" must be a integer between 1 and 160"
+
+exports['quality should be configurable using loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@80\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@80\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@80\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['quality should be configurable using resourceQuery options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@80\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@80\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@80\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['quality should priotitize resourceQuery over loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@40\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@40\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@40\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 1'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 2'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 3'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 4'] = "advanced-image-loader options validation error:\n    - Missing REQUIRED option \"quality\""
+
+exports['quality should be validated ${JSON.stringify(testCase)} 5'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 6'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 7'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 8'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 9'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 10'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 11'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 12'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['quality should be validated ${JSON.stringify(testCase)} 13'] = "advanced-image-loader options validation error:\n    - option \"quality\" must be a integer between 1 and 100"
+
+exports['format should be configurable using loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['format should be configurable using resourceQuery options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['format should priotitize resourceQuery over loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"test-1600@95\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"test-1600@95\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"test-1600@95\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['format should be validated ${JSON.stringify(testCase)} 1'] = "advanced-image-loader options validation error:\n    - option \"format\" must be a supported format [\"jpeg\", \"png\", \"tiff\" or \"webp\"]"
+
+exports['format should be validated ${JSON.stringify(testCase)} 2'] = "advanced-image-loader options validation error:\n    - option \"format\" must be a supported format [\"jpeg\", \"png\", \"tiff\" or \"webp\"]"
+
+exports['format should be validated ${JSON.stringify(testCase)} 3'] = "advanced-image-loader options validation error:\n    - Missing REQUIRED option \"format\""
+
+exports['format should be validated ${JSON.stringify(testCase)} 4'] = "advanced-image-loader options validation error:\n    - option \"format\" must be a supported format [\"jpeg\", \"png\", \"tiff\" or \"webp\"]"
+
+exports['format should be validated ${JSON.stringify(testCase)} 5'] = "advanced-image-loader options validation error:\n    - option \"format\" must be a supported format [\"jpeg\", \"png\", \"tiff\" or \"webp\"]"
+
+exports['format should be validated ${JSON.stringify(testCase)} 6'] = "advanced-image-loader options validation error:\n    - option \"format\" must be a supported format [\"jpeg\", \"png\", \"tiff\" or \"webp\"]"
+
+exports['format should be validated ${JSON.stringify(testCase)} 7'] = "advanced-image-loader options validation error:\n    - option \"format\" must be a supported format [\"jpeg\", \"png\", \"tiff\" or \"webp\"]"
+
+exports['name should be configurable using loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"image\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"image\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"image\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['name should be configurable using resourceQuery options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"image\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"image\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"image\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['name should priotitize resourceQuery over loader options 1'] = "module.exports = {\n  src: __webpack_public_path__ + \"otherimage\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"otherimage\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"otherimage\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['name can be a function 1'] = {
+  "buffer": "buffer",
+  "info": {
+    "format": "jpeg",
+    "width": 1600,
+    "height": 900,
+    "channels": 3,
+    "size": 13458
+  },
+  "options": {
+    "format": "jpeg",
+    "width": "original",
+    "quality": 95
+  },
+  "resourcePath": "/Users/massa/Dev/advanced-image-loader/test/assets/test.png"
+}
+
+exports['name can be a function 2'] = "module.exports = {\n  src: __webpack_public_path__ + \"image\",\n  width: 1600,\n  height: 900,\n  toString: function() {return __webpack_public_path__ + \"image\";},\n  images: [\n    {\n      src: __webpack_public_path__ + \"image\",\n      width: 1600,\n      height: 900\n    }\n  ]\n}"
+
+exports['name should be validated ${JSON.stringify(testCase)} 1'] = "advanced-image-loader options validation error:\n    - option \"name\" must be either a non empty string or a function"
+
+exports['name should be validated ${JSON.stringify(testCase)} 2'] = "advanced-image-loader options validation error:\n    - Missing REQUIRED option \"name\""
+
+exports['name should be validated ${JSON.stringify(testCase)} 3'] = "advanced-image-loader options validation error:\n    - option \"name\" must be either a non empty string or a function"
+
+exports['name should be validated ${JSON.stringify(testCase)} 4'] = "advanced-image-loader options validation error:\n    - option \"name\" must be either a non empty string or a function"
+
+exports['name should be validated ${JSON.stringify(testCase)} 5'] = "advanced-image-loader options validation error:\n    - option \"name\" must be either a non empty string or a function"
+
