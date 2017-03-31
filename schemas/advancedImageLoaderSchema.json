@@ -1,0 +1,58 @@
+{
+  "additionalProperties": true,
+  "definitions": {
+    "width": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "multipleOf": 1.0,
+          "type": "number"
+        },
+        {
+          "enum": ["original"]
+        }
+      ]
+    }
+  },
+  "properties": {
+    "format": {
+      "enum": ["jpeg", "png", "tiff", "webp"]
+    },
+    "name": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "instanceof": "Function"
+        }
+      ]
+    },
+    "srcset": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/width"
+      }
+    },
+    "placeholder": {
+      "minimum": 0,
+      "maximum": 160,
+      "type": "number"
+    },
+    "quality": {
+      "minimum": 1,
+      "maximum": 100,
+      "type": "number"
+    },
+    "width": {
+      "$ref": "#/definitions/width"
+    }
+  },
+  "required": [
+    "format",
+    "name",
+    "quality",
+    "width"
+  ]
+}
