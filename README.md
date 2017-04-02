@@ -1,6 +1,8 @@
 # advanced-image-loader
 
+[![npm version](https://badge.fury.io/js/advanced-image-loader.svg)](https://badge.fury.io/js/advanced-image-loader)
 [![Build Status](https://travis-ci.org/brokenmass/advanced-image-loader.svg?branch=master)](https://travis-ci.org/brokenmass/advanced-image-loader)
+[![codecov](https://codecov.io/gh/brokenmass/advanced-image-loader/branch/master/graph/badge.svg)](https://codecov.io/gh/brokenmass/advanced-image-loader)
 
 Advanced webpack2 image loader with support for image resizing, srcset and inlined placeholder.
 Thanks to [sharp](https://github.com/lovell/sharp) it's blazing fast (see [benchmars](docs/benchmarks.md))!
@@ -101,7 +103,7 @@ In case a configuration parameter is defined in both location the resourceQuery 
       * other `hashType`s, i. e. `sha1`, `md5`, `sha256`, `sha512`
       * other `digestType`s, i. e. `hex`, `base26`, `base32`, `base36`, `base49`, `base52`, `base58`, `base62`, `base64`
       * and `length` the length in chars
-  - if a function is provided it will be called with a single parameter in the form :
+  - if a function is provided it will be called with a single object parameter structured as:
   ```json
   {
     "buffer": <image data buffer?
