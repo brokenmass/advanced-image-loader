@@ -338,8 +338,11 @@ describe('advanced-image-loader', () => {
 
     it('name can be a function', () => {
       const nameFunction = (data) => {
-        // ignore buffer in the snapshot
-        snapshot(Object.assign(data, { buffer: 'buffer' }));
+        // ignore buffer and make path relative in the snapshot
+        snapshot(Object.assign(data, {
+          buffer: 'buffer',
+          resourcePath: path.relative(__dirname, data.resourcePath)
+        }));
         return 'image';
       };
 
