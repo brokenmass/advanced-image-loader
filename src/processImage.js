@@ -13,8 +13,7 @@ const process = function ({ image, options, width }) {
     }
 
     processingImage
-      .toFormat({
-        id: options.format,
+      .toFormat(options.format, {
         force: true,
         quality: options.quality
       })
@@ -66,7 +65,8 @@ const processImage = function (loaderContext, path, options) {
       if (options.placeholder) {
         output.placeholder = process({
           options: {
-            format: 'png'
+            format: 'jpeg',
+            quality: 10
           },
           image,
           width: options.placeholder,
