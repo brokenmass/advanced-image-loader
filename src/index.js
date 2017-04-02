@@ -29,6 +29,11 @@ const normalizeOptions = function (options) {
 };
 
 const loader = function () {
+  /* istanbul ignore if */
+  if (this.cacheable) {
+    this.cacheable();
+  }
+
   const callback = this.async();
   const loaderOptions = loaderUtils.getOptions(this);
   const resurceOptions = loaderUtils.parseQuery(this.resourceQuery || '?');
@@ -38,7 +43,7 @@ const loader = function () {
   validateOptions(options)
     .then(() => processImage(this, this.resourcePath, options))
     .then((output) => serializeOutput(output))
-    .then((body) => callback(null, `module.exports = ${body}`))
+    .then((body) => callback(null, `module.exports = ${body};`))
     .catch((error) => callback(error));
 };
 

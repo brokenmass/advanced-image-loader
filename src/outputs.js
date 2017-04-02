@@ -19,8 +19,8 @@ const toFile = function (loaderContext, options, { buffer, info }) {
     .replace(/\[width\]/g, info.width)
     .replace(/\[quality\]/g, options.quality);
   }
-
-  loaderContext.emitFile(`${fileName}.${extension}`, buffer);
+  fileName = `${fileName}.${extension}`;
+  loaderContext.emitFile(fileName, buffer);
 
   return {
     src: `__webpack_public_path__ + ${JSON.stringify(fileName)}`,
