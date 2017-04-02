@@ -81,12 +81,41 @@ or css
 All the parameter can be set as webpack rule option or defined on a per resource base using resourceQuery parameters.
 In case a configuration parameter is defined in both location the resourceQuery has higher priority.
 
-- `width: integer or 'original'` `default: 'original'`: define the output width of the 'main' image
+- `width: integer or 'original'`: define the output width of the 'main' image `default: 'original'`
 - `srcset: array of 'widths' (integer or 'original')`: if specified define the width of all the images in the srcset
-- `format: string` `default: 'jpeg'`: define the output format of the images (valid values are `jpeg`, `png`, `tiff`, `webp`)
-- `quality: integer` `default: '95'`: define the compression quality (ignored if format is `png`)
+- `format: string`: define the output format of the images (valid values are `jpeg`, `png`, `tiff`, `webp`) `default: 'jpeg'`
+- `quality: integer`: define the compression quality (ignored if format is `png`) `default: '95'`
 - `placeholder: integer`: if specified define the width of the image used as placeholder and inlined as data URI
-
+- `name: function or string`: define the naming of the output files `default: '[name]-[width]@[quality]'`
+  - if a string is provided it will be interpolated and the following values will be replaced
+    * `[width]` the width of the output image
+    * `[quality]` the configured quality
+    * `[ext]` the extension of the resource
+    * `[name]` the basename of the resource
+    * `[path]` the path of the resource relative to the `context` query parameter or option.
+    * `[folder]` the folder of the resource is in.
+    * `[emoji]` a random emoji representation of the image
+    * `[emoji:<length>]` same as above, but with a customizable number of emojis
+    * `[hash]` the hash of the image
+    * `[<hashType>:hash:<digestType>:<length>]` optionally one can configure
+      * other `hashType`s, i. e. `sha1`, `md5`, `sha256`, `sha512`
+      * other `digestType`s, i. e. `hex`, `base26`, `base32`, `base36`, `base49`, `base52`, `base58`, `base62`, `base64`
+      * and `length` the length in chars
+  - if a function is provided it will be called with a single parameter in the form :
+  ```json
+  {
+    "buffer": <image data buffer?
+    "info": {
+      "format": string <format of the output image>,
+      "width": integer <width of the output image>,
+      "height": integer <height of the output image>,
+      "channels": integer <number of collor channels of the output image>,
+      "size": integer <filesize of the output image>
+    },
+    "options": object <the configuration option>,
+    "resourcePath": string <absolute path of the input image>
+  }
+  ```
 
 ## Examples
 
