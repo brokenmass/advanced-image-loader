@@ -43,7 +43,7 @@
     "mocha": "3.5.3",
     "nyc": "10.3.2",
     "semantic-release": "6.3.6",
-    "sinon": "2.4.1",
+    "sinon": "5.0.7",
     "sinon-chai": "2.14.0",
     "snap-shot": "2.17.0"
   },
