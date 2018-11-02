@@ -87,6 +87,7 @@ In case a configuration parameter is defined in both location the resourceQuery 
 - `srcset: array of 'widths' (integer or 'original')`: if specified define the width of all the images in the srcset
 - `format: string`: define the output format of the images (valid values are `jpeg`, `png`, `tiff`, `webp`) `default: 'jpeg'`
 - `quality: integer`: define the compression quality (ignored if format is `png`) `default: '95'`
+- `progressive: boolean`: define if the generated image should be progressive (ignored if format is `webp` or `tiff`) `default: false`
 - `placeholder: integer`: if specified define the width of the image used as placeholder and inlined as data URI
 - `name: function or string`: define the naming of the output files `default: '[name]-[width]@[quality]'`
   - if a string is provided it will be interpolated and the following values will be replaced

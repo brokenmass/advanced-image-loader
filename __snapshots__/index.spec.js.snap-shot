@@ -159,12 +159,13 @@ exports['name can be a function 1'] = {
     "width": 1600,
     "height": 900,
     "channels": 3,
-    "size": 25738
+    "size": 25003
   },
   "options": {
     "format": "jpeg",
     "width": "original",
-    "quality": 95
+    "quality": 95,
+    "progressive": true
   },
   "resourcePath": "assets/test.png"
 }

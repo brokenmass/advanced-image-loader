@@ -15,7 +15,8 @@ const process = function ({ image, options, width }) {
     processingImage
       .toFormat(options.format, {
         force: true,
-        quality: options.quality
+        quality: options.quality,
+        progressive: options.progressive
       })
       .toBuffer((error, buffer, info) => {
         /* istanbul ignore if */
