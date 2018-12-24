@@ -7,7 +7,8 @@ const DEFAULTS = {
   format: 'jpeg',
   name: '[name]-[width]@[quality]',
   width: 'original',
-  quality: 95
+  quality: 95,
+  progressive: false
 };
 
 const tryParse = function (width) {

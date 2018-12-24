@@ -45,6 +45,9 @@
       "maximum": 100,
       "type": "number"
     },
+    "progressive": {
+      "type": "boolean"
+    },
     "width": {
       "$ref": "#/definitions/width"
     }

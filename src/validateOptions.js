@@ -18,6 +18,7 @@ const errorDefinitions = {
   '.quality': 'option "quality" must be a integer between 1 and 100',
   '.srcset': 'option "srcset" must be an array of valid widths [positive integer or "original" string]',
   '.width': 'option "width" must be a valid width [positive integer or "original" string]',
+  '.progressive': 'option "progressive" must be a valid boolean value [true or false]'
 };
 
 const toErrorMessage = function (errors) {

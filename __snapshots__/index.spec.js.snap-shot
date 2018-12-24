@@ -164,7 +164,8 @@ exports['name can be a function 1'] = {
   "options": {
     "format": "jpeg",
     "width": "original",
-    "quality": 95
+    "quality": 95,
+    "progressive": false
   },
   "resourcePath": "assets/test.png"
 }

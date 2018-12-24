@@ -12,7 +12,8 @@ module.exports = {
         width: 1280,
         srcset: [320, 640, 960, 1280, 1920],
         quality: 90,
-        placeholder: 32
+        placeholder: 32,
+        progressive: true
       }
     }]
   },
