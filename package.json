@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "ajv": "^4.11.5",
-    "ajv-keywords": "^1.5.1",
+    "ajv-keywords": "^3.0.0",
     "loader-utils": "^1.1.0",
     "sharp": "^0.17.2"
   },
