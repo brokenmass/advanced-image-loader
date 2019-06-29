@@ -51,7 +51,7 @@
     "ajv": "^4.11.5",
     "ajv-keywords": "^1.5.1",
     "loader-utils": "^1.1.0",
-    "sharp": "^0.17.2"
+    "sharp": "^0.20.0"
   },
   "nyc": {
     "lines": 100,
